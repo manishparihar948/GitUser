@@ -44,45 +44,16 @@ class WebService: Codable {
 @MainActor class GHUserViewModel: ObservableObject {
     
     @Published var gitUserList : [GHUserList] = []
-    //@Published var gitUserDetails : [GHUserDetail] = []
+    @Published var gitUserDetails : [GHUserDetail] = []
     
     func fetchUserLists() async {
         guard let downloadUserLists : [GHUserList] = await WebService().downloadData(fromURL: "https://api.github.com/users") else {return}
         gitUserList = downloadUserLists
     }
-
     
-    /*
-    // MARK: - API Call For User Details
-    func fetchUserDetails(urlString: String, completion: @escaping (Result<GHUserDetail, Error>) -> Void) {
-        guard let url = URL(string: urlString) else {
-            completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
-            return
-        }
-        
-        let session = URLSession.shared
-        let task = session.dataTask(with: url) { (data, response, error) in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-            
-            guard let data = data else {
-                completion(.failure(NSError(domain: "No data received", code: 0, userInfo: nil)))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let userDetails = try decoder.decode(GHUserDetail.self, from: data)
-                completion(.success(userDetails))
-            } catch {
-                completion(.failure(error))
-            }
-        }
-        
-        task.resume()
+    func fetchUserDetails(urlString:String) async {
+        guard let downloadUserDetails : [GHUserDetail] = await WebService().downloadData(fromURL: urlString)  else {return}
+        gitUserDetails = downloadUserDetails
     }
-     */
 
 }

@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C26D9179-721C-4ADD-A6F4-BCBC22872120"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GitUserChannel/ViewModel/GHUserViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "fetchUserLists()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C26D9179-721C-4ADD-A6F4-BCBC22872120 - ecf4dbf38b8a35fe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GitUserChannel.GHUserViewModel.fetchUserLists() async -&gt; ()"
-                  moduleName = "GitUserChannel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/manishparihar/Desktop/CodeBox/IOS_Playground/GitUser/GitUserChannel/GitUserChannel/ViewModel/GHUserViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  uuid = "C26D9179-721C-4ADD-A6F4-BCBC22872120 - 1425e10a36de07c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for GitUserChannel.GHUserViewModel.fetchUserLists() async -&gt; ()"
-                  moduleName = "GitUserChannel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/manishparihar/Desktop/CodeBox/IOS_Playground/GitUser/GitUserChannel/GitUserChannel/ViewModel/GHUserViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "347207D4-0D16-4E2C-B328-13E0A38ACE7A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

@@ -13,24 +13,28 @@ struct GHUserListVC: View {
         
     // MARK: - Body
     var body: some View {
+        
         NavigationView {
-            VStack(alignment: .leading) {
-               
-                List(viewModel.gitUserList) { userlist in
+            VStack {
+                List(viewModel.gitUserList, id: \.self)  { userlist in
+                    NavigationLink {
+                        GHUserProfileVC(gitUserList: userlist)
+                    } label: {
                         GHUserRow(gitUserList: userlist)
                     }
-                
-            }
-            .navigationTitle("Git Users")
-            .onAppear {
-                if viewModel.gitUserList.isEmpty {
-                    Task {
-                        await viewModel.fetchUserLists()
+                          //  GHUserRow(gitUserList: userlist)
+                    }
+                }
+                .navigationTitle("Git Users")
+                .onAppear {
+                    if viewModel.gitUserList.isEmpty {
+                        Task {
+                            await viewModel.fetchUserLists()
+                        }
                     }
                 }
             }
         }
-    }
 }
 
 

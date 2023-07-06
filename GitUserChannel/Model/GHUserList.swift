@@ -76,7 +76,52 @@ struct GHUserList: Codable, Hashable, Identifiable {
             
             // Compare other properties if needed
             return lhs.id == rhs.id
-        }
+    }
+    
+    init(login:String, id:Int, nodeID:String, avatarUrl:String, gravatarId:String,
+         url:String, htmlUrl:String, followersUrl:String, followingUrl:String, gistsUrl:String,
+         starredUrl:String,subscriptionsUrl:String, organizationsUrl:String, reposUrl:String,
+         eventsUrl:String,receivedeventsUrl:String,type:String,siteAdmin:Bool) {
+        self.login = login
+        self.id = id
+        self.nodeId = nodeID
+        self.avatarUrl = avatarUrl
+        self.gravatarId = gravatarId
+        self.url = url
+        self.htmlUrl = htmlUrl
+        self.followersUrl = followersUrl
+        self.followingUrl = followingUrl
+        self.gistsUrl = gistsUrl
+        self.starredUrl = starredUrl
+        self.subscriptionsUrl = subscriptionsUrl
+        self.organizationsUrl = organizationsUrl
+        self.reposUrl = reposUrl
+        self.eventsUrl = eventsUrl
+        self.receivedeventsUrl = receivedeventsUrl
+        self.type = type
+        self.siteAdmin = siteAdmin
+    }
+    
+    static func example1() -> GHUserList {
+        return   GHUserList(login:"mojombo",
+                              id:1,
+                              nodeID:"MDQ6VXNlcjE=",
+                              avatarUrl: "https://avatars.githubusercontent.com/u/1?v=4",
+                              gravatarId: "",
+                              url: "https://api.github.com/users/mojombo",
+                              htmlUrl: "https://github.com/mojombo",
+                              followersUrl: "https://api.github.com/users/mojombo/followers",
+                              followingUrl: "https://api.github.com/users/mojombo/following{/other_user}",
+                              gistsUrl: "https://api.github.com/users/mojombo/gists{/gist_id}",
+                              starredUrl: "https://api.github.com/users/mojombo/starred{/owner}{/repo}",
+                              subscriptionsUrl: "https://api.github.com/users/mojombo/subscriptions",
+                              organizationsUrl: "https://api.github.com/users/mojombo/orgs",
+                              reposUrl: "https://api.github.com/users/mojombo/repos",
+                              eventsUrl: "https://api.github.com/users/mojombo/events{/privacy}",
+                              receivedeventsUrl: "https://api.github.com/users/mojombo/received_events",
+                              type: "User",
+                              siteAdmin: false)
+    }
     
    
  }
