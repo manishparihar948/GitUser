@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CD2A03202A5609CF00F2DE9E /* GitUserChannelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A031F2A5609CF00F2DE9E /* GitUserChannelApp.swift */; };
-		CD2A03222A5609CF00F2DE9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A03212A5609CF00F2DE9E /* ContentView.swift */; };
 		CD2A03242A5609D200F2DE9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2A03232A5609D200F2DE9E /* Assets.xcassets */; };
 		CD2A03272A5609D200F2DE9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2A03262A5609D200F2DE9E /* Preview Assets.xcassets */; };
 		CD2A03312A5609D200F2DE9E /* GitUserChannelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A03302A5609D200F2DE9E /* GitUserChannelTests.swift */; };
 		CD2A033B2A5609D200F2DE9E /* GitUserChannelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A033A2A5609D200F2DE9E /* GitUserChannelUITests.swift */; };
 		CD2A033D2A5609D200F2DE9E /* GitUserChannelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A033C2A5609D200F2DE9E /* GitUserChannelUITestsLaunchTests.swift */; };
+		CD2A034E2A560CEF00F2DE9E /* GHUserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A034D2A560CEF00F2DE9E /* GHUserListVC.swift */; };
+		CD2A03502A560E2400F2DE9E /* GHUserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A034F2A560E2400F2DE9E /* GHUserProfileVC.swift */; };
+		CD2A03522A560EA400F2DE9E /* GHUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A03512A560EA400F2DE9E /* GHUserList.swift */; };
+		CD2A03542A560EE000F2DE9E /* GHUserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A03532A560EE000F2DE9E /* GHUserDetail.swift */; };
+		CD2A03562A560F4100F2DE9E /* GHUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A03552A560F4100F2DE9E /* GHUserViewModel.swift */; };
+		CD2A03582A56120C00F2DE9E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A03572A56120C00F2DE9E /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		CD2A031C2A5609CF00F2DE9E /* GitUserChannel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitUserChannel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2A031F2A5609CF00F2DE9E /* GitUserChannelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserChannelApp.swift; sourceTree = "<group>"; };
-		CD2A03212A5609CF00F2DE9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD2A03232A5609D200F2DE9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD2A03262A5609D200F2DE9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD2A032C2A5609D200F2DE9E /* GitUserChannelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitUserChannelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,12 @@
 		CD2A03362A5609D200F2DE9E /* GitUserChannelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitUserChannelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2A033A2A5609D200F2DE9E /* GitUserChannelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserChannelUITests.swift; sourceTree = "<group>"; };
 		CD2A033C2A5609D200F2DE9E /* GitUserChannelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserChannelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD2A034D2A560CEF00F2DE9E /* GHUserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUserListVC.swift; sourceTree = "<group>"; };
+		CD2A034F2A560E2400F2DE9E /* GHUserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUserProfileVC.swift; sourceTree = "<group>"; };
+		CD2A03512A560EA400F2DE9E /* GHUserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUserList.swift; sourceTree = "<group>"; };
+		CD2A03532A560EE000F2DE9E /* GHUserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUserDetail.swift; sourceTree = "<group>"; };
+		CD2A03552A560F4100F2DE9E /* GHUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUserViewModel.swift; sourceTree = "<group>"; };
+		CD2A03572A56120C00F2DE9E /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,11 @@
 		CD2A031E2A5609CF00F2DE9E /* GitUserChannel */ = {
 			isa = PBXGroup;
 			children = (
+				CD2A034C2A560BE900F2DE9E /* Utils */,
+				CD2A034B2A560BDD00F2DE9E /* Model */,
+				CD2A034A2A560BD500F2DE9E /* ViewModel */,
+				CD2A03492A560BD000F2DE9E /* View */,
 				CD2A031F2A5609CF00F2DE9E /* GitUserChannelApp.swift */,
-				CD2A03212A5609CF00F2DE9E /* ContentView.swift */,
 				CD2A03232A5609D200F2DE9E /* Assets.xcassets */,
 				CD2A03252A5609D200F2DE9E /* Preview Content */,
 			);
@@ -125,6 +138,40 @@
 				CD2A033C2A5609D200F2DE9E /* GitUserChannelUITestsLaunchTests.swift */,
 			);
 			path = GitUserChannelUITests;
+			sourceTree = "<group>";
+		};
+		CD2A03492A560BD000F2DE9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A034D2A560CEF00F2DE9E /* GHUserListVC.swift */,
+				CD2A034F2A560E2400F2DE9E /* GHUserProfileVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD2A034A2A560BD500F2DE9E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A03552A560F4100F2DE9E /* GHUserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD2A034B2A560BDD00F2DE9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A03512A560EA400F2DE9E /* GHUserList.swift */,
+				CD2A03532A560EE000F2DE9E /* GHUserDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD2A034C2A560BE900F2DE9E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A03572A56120C00F2DE9E /* Helper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2A03222A5609CF00F2DE9E /* ContentView.swift in Sources */,
+				CD2A034E2A560CEF00F2DE9E /* GHUserListVC.swift in Sources */,
+				CD2A03582A56120C00F2DE9E /* Helper.swift in Sources */,
+				CD2A03522A560EA400F2DE9E /* GHUserList.swift in Sources */,
+				CD2A03562A560F4100F2DE9E /* GHUserViewModel.swift in Sources */,
+				CD2A03542A560EE000F2DE9E /* GHUserDetail.swift in Sources */,
 				CD2A03202A5609CF00F2DE9E /* GitUserChannelApp.swift in Sources */,
+				CD2A03502A560E2400F2DE9E /* GHUserProfileVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

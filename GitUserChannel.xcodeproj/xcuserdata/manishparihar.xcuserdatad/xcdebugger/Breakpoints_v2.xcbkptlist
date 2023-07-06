@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5C364DBE-6CDA-4C10-BA5C-715025A1FACE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C26D9179-721C-4ADD-A6F4-BCBC22872120"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitUserChannel/ViewModel/GHUserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "fetchUserLists()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C26D9179-721C-4ADD-A6F4-BCBC22872120 - ecf4dbf38b8a35fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitUserChannel.GHUserViewModel.fetchUserLists() async -&gt; ()"
+                  moduleName = "GitUserChannel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manishparihar/Desktop/CodeBox/IOS_Playground/GitUser/GitUserChannel/GitUserChannel/ViewModel/GHUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "C26D9179-721C-4ADD-A6F4-BCBC22872120 - 1425e10a36de07c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for GitUserChannel.GHUserViewModel.fetchUserLists() async -&gt; ()"
+                  moduleName = "GitUserChannel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manishparihar/Desktop/CodeBox/IOS_Playground/GitUser/GitUserChannel/GitUserChannel/ViewModel/GHUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "347207D4-0D16-4E2C-B328-13E0A38ACE7A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitUserChannel/ViewModel/GHUserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "downloadData(fromURL:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "347207D4-0D16-4E2C-B328-13E0A38ACE7A - a923c423f689a720"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitUserChannel.WebService.downloadData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(fromURL: Swift.String) async -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "GitUserChannel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manishparihar/Desktop/CodeBox/IOS_Playground/GitUser/GitUserChannel/GitUserChannel/ViewModel/GHUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "347">
+               </Location>
+               <Location
+                  uuid = "347207D4-0D16-4E2C-B328-13E0A38ACE7A - fa921a8d973a28b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for GitUserChannel.WebService.downloadData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(fromURL: Swift.String) async -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "GitUserChannel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manishparihar/Desktop/CodeBox/IOS_Playground/GitUser/GitUserChannel/GitUserChannel/ViewModel/GHUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
