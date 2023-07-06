@@ -40,6 +40,7 @@ class WebService: Codable {
     }
 }
 
+// MainActor use - Swift knows this code will be run on the main thread
 @MainActor class GHUserViewModel: ObservableObject {
     
     @Published var gitUserList : [GHUserList] = []
@@ -49,43 +50,7 @@ class WebService: Codable {
         guard let downloadUserLists : [GHUserList] = await WebService().downloadData(fromURL: "https://api.github.com/users") else {return}
         gitUserList = downloadUserLists
     }
-    
-    /*
-    // MARK: - API Call For User List
-    func fetchUserLists()  {
-        
-        guard let url = URL(string: "https://api.github.com/users") else {
-                   return
-               }
-               
-               let session = URLSession.shared
-               let task = session.dataTask(with: url) { [weak self] (data, response, error) in
-                   if let error = error {
-                       print("Error fetching users: \(error.localizedDescription)")
-                       return
-                   }
-                   
-                   guard let data = data else {
-                       print("Empty response")
-                       return
-                   }
-                   
-                   do {
-                       // Parse the JSON response into an array of User objects
-                       _ = try JSONDecoder().decode([GHUserList].self, from: data)
-                      
-                       // Reload the table view on the main thread
-                       DispatchQueue.main.async {
-                           self?.gitUserList = self!.gitUserList
-                       }
-                   } catch {
-                       print("Error decoding JSON: \(error.localizedDescription)")
-                   }
-               }
-               
-               task.resume()
-    }
-    */
+
     
     /*
     // MARK: - API Call For User Details

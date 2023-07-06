@@ -17,8 +17,7 @@ struct GHUserListVC: View {
             VStack(alignment: .leading) {
                
                 List(viewModel.gitUserList) { userlist in
-                       // GHUserRow(viewModel.gitUserList: userlist)
-                        Text(userlist.login)
+                        GHUserRow(gitUserList: userlist)
                     }
                 
             }
@@ -41,26 +40,49 @@ struct GHUserListVC_Previews: PreviewProvider {
     }
 }
 
-/*
+
  // MARK: - List Row
  struct GHUserRow: View {
  
- let darkGrayColor = UIColor.gray
- // let gitUserList : GHUserList
- let viewModel = GHUserViewModel()
+     let darkGrayColor = UIColor.gray
+     let gitUserList : GHUserList
  
- let helper = Helper()
+     let helper = Helper()
+     
+     let imageSize : CGFloat = 80
  
- var body: some View {
- VStack(alignment: .leading) {
- 
- // Display Name
- Text(viewModel.gitUserList.login)
- .font(.system(size: 16, weight: .bold, design: .monospaced))
- .foregroundColor(.blue)
- .padding(.bottom, 2)
+     var body: some View {
+         HStack{
+             // Image Display
+             if !gitUserList.avatarUrl.isEmpty {
+                 AsyncImage(url: URL(string: gitUserList.avatarUrl)) { phase in
+                     if let image = phase.image {
+                         image.resizable()
+                             .scaledToFill()
+                             .frame(width: imageSize, height: imageSize)
+                             .clipped()
+                     } else if phase.error != nil {
+                         Text(phase.error?.localizedDescription ?? "error")
+                             .foregroundColor(Color.pink)
+                             .frame(width: imageSize, height: imageSize)
+                     } else {
+                         ProgressView()
+                              .frame(width: imageSize, height: imageSize)
+                      }
+                 }
+             } else {
+                 Color.gray.frame(width: imageSize, height: imageSize)
+             }
+             
+             VStack (alignment: .leading, spacing: 5) {
+                 // Display Name
+                 Text(gitUserList.login.uppercased())
+                     .font(.system(size: 16, weight: .bold, design: .monospaced))
+                     .foregroundColor(.blue)
+                     .padding(.bottom, 2)
+             }
+         }
+         .frame(height: 80)
+     }
  }
- .frame(height: 80)
- }
- }
- */
+
